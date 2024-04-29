@@ -1,6 +1,3 @@
-FROM ubuntu:latest
+FROM nginx
 
-
-RUN mkdir /app
-
-RUN touch /app/test_github.md
+RUN echo "test autobuild" > /usr/share/nginx/html/index.html
